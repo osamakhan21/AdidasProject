@@ -38,7 +38,6 @@ st.markdown("""
             gap: 1rem;
         }
 
-        /* KPI cards */
         div[data-testid="metric-container"] {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
@@ -53,12 +52,6 @@ st.markdown("""
             transform: translateY(-3px);
         }
 
-        .stDataFrame {
-            background-color: #0a2740;
-            border-radius: 10px;
-        }
-
-        /* Sidebar Enhanced Styling */
         section[data-testid="stSidebar"] {
             background-color: #002d4d !important;
             padding: 2rem 1rem 2rem 1rem;
@@ -66,23 +59,6 @@ st.markdown("""
             border-right: 2px solid #003d66;
             font-family: 'Inter', sans-serif;
             box-shadow: 2px 0 12px rgba(0,0,0,0.3);
-        }
-
-        section[data-testid="stSidebar"] h1,
-        section[data-testid="stSidebar"] h2,
-        section[data-testid="stSidebar"] h3,
-        section[data-testid="stSidebar"] label {
-            color: #f1f1f1 !important;
-        }
-
-        section[data-testid="stSidebar"] .stSelectbox,
-        section[data-testid="stSidebar"] .stDateInput {
-            background-color: #f8f9fa !important;
-            border-radius: 6px !important;
-        }
-
-        section[data-testid="stSidebar"] .css-1cpxqw2 {
-            margin-bottom: 1rem !important;
         }
 
         section[data-testid="stSidebar"] .stMarkdown {
@@ -102,8 +78,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+
 # --- HEADER ---
 st.markdown('<header><h1>📊 Adidas US Sales Dashboard</h1></header>', unsafe_allow_html=True)
+
 
 # --- LOAD DATA ---
 file_path = "data/Adidas US Sales Datasets.xlsx"
